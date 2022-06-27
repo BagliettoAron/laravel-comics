@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+.topHeader {
+  background-color: #0282f9;
+  width: 100%;
+  height: 2rem;
+}
+
+.topHeader .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  text-transform: uppercase;
+  font-weight: 550;
+  color: white;
+}
+
+.topHeader .container span {
+  padding: 0 1rem;
+}
+
+.bottomHeader {
+  width: 100%;
+  height: 8rem;
+}
+
+.bottomHeader .container {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottomHeader .container .navMenu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2rem;
+}
+
+.bottomHeader .container .navMenu ul li {
+  color: #464646;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+
+.bottomHeader .container .searchBox {
+  color: #464646;
+}
+
+.bottomHeader .container .searchBox input {
+  font-weight: 600;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.jumbotron {
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  width: 100%;
+  height: 20rem;
+  background-size: cover;
+}
+
