@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+$comicsData = config('comicsData');
+
+Route::get('/', function () use ($comicsData) {
     return view('home');
 })->name('homePage');
 

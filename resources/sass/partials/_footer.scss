@@ -1,8 +1,10 @@
 .topFooterBg{
     background-image: url(../../../public/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 20rem;
-    .container{
+    .innerFooter{
 
         position: relative;
         
@@ -10,23 +12,23 @@
         
         .footerNav{
             position: absolute;
-            width: 80%;
-            padding: 2rem 0;
+            width: 100%;
             top: 0;
             left: 0;
-            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
            
             .footerNavLeft{
                 width: calc(100% / 2 - 10px);
                 margin: 5px;
-                background-color: red;
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
 
                
                 h3{
                     color: $footer-title-color-text;
                     text-transform: uppercase;
+                    padding: 1rem 0;
                 }
 
                 li{
@@ -34,6 +36,19 @@
                     padding: 0 .3rem;
                 }
              
+            }
+
+            .footerNavRight{
+                width: calc(100% / 2 - 10px);
+                margin: 5px;
+                display: flex;
+                justify-content: center;
+                img{
+                    height: 20rem;
+                    padding: 2rem 0;
+                    
+                }
+
             }
         }
     }
