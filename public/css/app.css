@@ -78,3 +78,40 @@ li {
   background-size: cover;
 }
 
+.topFooterBg {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  width: 100%;
+  height: 20rem;
+}
+
+.topFooterBg .container {
+  position: relative;
+}
+
+.topFooterBg .container .footerNav {
+  position: absolute;
+  width: 80%;
+  padding: 2rem 0;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.topFooterBg .container .footerNav .footerNavLeft {
+  width: calc(50% - 10px);
+  margin: 5px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.topFooterBg .container .footerNav .footerNavLeft h3 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.topFooterBg .container .footerNav .footerNavLeft li {
+  color: #464646;
+  padding: 0 0.3rem;
+}
+
