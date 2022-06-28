@@ -18,7 +18,10 @@ title test
                 </div>
 
                 <div class="cardTitle">
-                    <span>{{$comic['series']}}</span>
+                    <a href="{{route('comic')}}">
+                        <span>{{$comic['series']}}</span>
+
+                    </a>
                 </div>
             </div>
             @endforeach

@@ -24,6 +24,12 @@ Route::get('/', function () use ($data) {
 })->name('homePage');
 
 
-Route::get('/comic', function () use ($data) {
-    return view('comic', $data);
+Route::get('/comic/{id}', function ($id) use ($comicsData) {
+    // $comic = collect(config('comics'));
+    $current_comic = $comicsData->where('id', $id);
+    
+    dd($current_comic);
+    
+    
+    return view('comic', $comicsData);
 })->name('comic');
