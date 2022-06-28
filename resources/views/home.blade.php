@@ -9,17 +9,19 @@ title test
     <div class="main">
         <div class="container">
             
-           h
-                <div class="card">
-                    <div class="cardImage">
-                        <img src="../../" alt="">
+            @foreach ($comics as $comic)
+                
+            <div class="card">
+                <div class="cardImage">
+                    <img src="{{$comic['thumb']}}" alt="">
 
-                    </div>
-
-                    <div class="cardTitle">
-                        <span>test</span>
-                    </div>
                 </div>
+
+                <div class="cardTitle">
+                    <span>{{$comic['series']}}</span>
+                </div>
+            </div>
+            @endforeach
     
               
 
