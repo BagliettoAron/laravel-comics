@@ -23,6 +23,7 @@ Route::get('/', function () use ($data) {
     return view('home', $data);
 })->name('homePage');
 
-Route::get('comics', function() {
-    return view ('comics');
-}) -> name ('single_comic');
+
+Route::get('/comic', function () use ($data) {
+    return view('comic', $data);
+})->name('comic');
